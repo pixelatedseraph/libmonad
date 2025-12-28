@@ -4,8 +4,8 @@
 #define MND_DEFINE_MAYBE(T, Name)       \
 typedef struct                          \
 {                                       \
-    int exists;                         \
-    T   value;                          \
+    int exists;        /* Flag that determines if the Monad has a value */                 \
+    T   value;         /* The actual value  */                 \
 }MAYBE_##Name;                          \
                                         \
 static inline MAYBE_##Name              \

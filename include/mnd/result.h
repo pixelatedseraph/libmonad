@@ -15,12 +15,12 @@ typedef struct                      \
 static inline Result_##Name                                             \ 
 Result_##Name##_ok(T v)                                                 \
 {                                                                       \
-    return (Result_##Name) (.ok = 1 , .value = v);                      \
+    return (Result_##Name) {.ok = 1 , .value = v};                      \
 }                                                                       \
 static inline Result_##Name                                             \
-Result_#Name##_err(int err_code)                                        \
+Result_##Name##_err(int err_code)                                        \
 {                                                                       \
-    return (Result_##Name)\ (.ok = 0, .err = err_code);                 \
+    return (Result_##Name) {.ok = 0, .err = err_code};                  \
 }                                                                       \
 
 /* Accessor Macros for a given function returning Result_* Monad */

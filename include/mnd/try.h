@@ -1,5 +1,5 @@
-#ifndef TRY_H
-#define TRY_H
+#ifndef MND_TRY_H
+#define MND_TRY_H
 
 /*
 *   MND_UNWRAP : Unwraps Result_T -> T | Result_T (propogation)
