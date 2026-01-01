@@ -9,7 +9,7 @@ typedef struct Student{
     int age;
 }Student;
 
-#define MALLOC_EXECPTION 1
+#define MALLOC_EXCEPTION 1
 
 MND_DEFINE_RESULT(int,INT)
 MND_DEFINE_RESULT(Student*,p_Student)
